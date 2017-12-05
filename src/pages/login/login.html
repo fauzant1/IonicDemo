@@ -1,0 +1,30 @@
+
+
+
+<ion-content class="login-content" padding="false">
+  <div class="center">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          
+          <ion-item class='textbox'>
+            <ion-input  type="email" placeholder="Email"  required ></ion-input>
+          </ion-item>
+          
+          <ion-item class='textbox'>
+            <ion-input type="password" placeholder="Password" required></ion-input>
+          </ion-item>
+          
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col class="signup-col">
+        <button ion-button class="login-btn" full type="submit" (click)="doLogin()" >Login</button>
+        <button style="opacity:0.8; width:100%" ion-button color="danger" (click)="signup_page()">Not Yet a Member? Create Account Now</button>
+       
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

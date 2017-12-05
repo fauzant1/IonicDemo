@@ -1,0 +1,8 @@
+{
+  "name": "LoginWebSuper",
+  "app_id": "6b2f8a42",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
