@@ -52,6 +52,6 @@ export class SignupPage {
     });
   }
   login_page(){
-    this.navCtrl.push(LoginPage);
+    this.navCtrl.setRoot(LoginPage);
   }
 }
