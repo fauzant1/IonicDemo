@@ -63,10 +63,22 @@ export class LoginPage {
     this.navCtrl.setRoot('SignupPage');
   }
 to_uploadPage()
-{alert('hi');
-  this.fileChooser.open()
-  .then(uri => console.log(uri))
-  .catch(e => console.log(e));
+{
+  var success = function(data) {
+    console.log(data.url);
+    // do something
+};
+
+var error = function(msg) {
+    console.log(msg);
+    //do something
+};
+
+this.fileChooser.open().then(function(){
+  alert("success");
+}).catch(function(){
+  alert("error");
+})
   //this.navCtrl.setRoot('ChunkuploadPage');
 }
 
