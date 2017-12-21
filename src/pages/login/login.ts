@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import {SignupPage} from '../signup/signup';
+import {ChunkuploadPage} from '../chunkupload/chunkupload';
 import { User } from '../../providers/providers';
 import { MainPage } from '../pages';
 import { Events } from 'ionic-angular';
-
-
+import { FileChooser } from '@ionic-native/file-chooser';
+import { HttpClientModule } from '@angular/common/http'; 
+import { HttpModule } from '@angular/http';
+import { Http} from '@angular/http';
 
 @IonicPage()
 
@@ -29,7 +32,9 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
-    public translateService: TranslateService) {
+    public translateService: TranslateService,
+    public fileChooser:FileChooser
+  ) {
 
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
@@ -57,5 +62,12 @@ export class LoginPage {
   signup_page() {
     this.navCtrl.setRoot('SignupPage');
   }
+to_uploadPage()
+{alert('hi');
+  this.fileChooser.open()
+  .then(uri => console.log(uri))
+  .catch(e => console.log(e));
+  //this.navCtrl.setRoot('ChunkuploadPage');
+}
 
 }

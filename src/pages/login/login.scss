@@ -64,7 +64,7 @@
         
             .login-btn {
               background: rgb(27, 26, 26);
-              opacity: 0.5;
+              opacity: 0.6;
               width :100%;
               border: 1px solid #ffffff;
             }
@@ -72,6 +72,17 @@
             .register-btn {
               color: #ffffff;
               font-size: 0.8em;
+            }
+            .upload-btn{
+              background: rgb(27, 26, 26);;
+              padding: 10px;
+              opacity: 0.5;
+            }
+            .ion-md-cloud-upload{
+              margin-left: 10px;
+              font-size: 45px;
+              
+              
             }
          }
         

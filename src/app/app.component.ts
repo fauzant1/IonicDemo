@@ -8,7 +8,9 @@ import { FirstRunPage } from '../pages/pages';
 import { Settings } from '../providers/providers';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import { Injectable } from '@angular/core';
-
+import { FileChooser } from '@ionic-native/file-chooser';
+import { HttpClientModule } from '@angular/common/http'; 
+import { HttpModule } from '@angular/http';
 
 @Component({
   template: `<ion-menu [content]="content">
@@ -40,6 +42,8 @@ export class MyApp {
     { title: 'Content', component: 'ContentPage' },
     { title: 'Login', component: 'LoginPage' },
     { title: 'Signup', component: 'SignupPage' },
+    { title: 'Chunkupload', component: 'ChunkuploadPage' },
+    
     { title: 'Master Detail', component: 'ListMasterPage' },
     { title: 'Menu', component: 'MenuPage' },
     { title: 'Settings', component: 'SettingsPage' },

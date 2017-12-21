@@ -16,8 +16,9 @@ import { Api } from '../providers/providers';
 import { MyApp } from './app.component';
 import { Facebook } from '@ionic-native/facebook';
 import {Events} from 'ionic-angular';
-
-
+import { FileChooser } from '@ionic-native/file-chooser';
+import { HttpModule } from '@angular/http';
+import { Http} from '@angular/http'
 
 
 
@@ -69,6 +70,7 @@ export function provideSettings(storage: Storage) {
     Items,
     User,
     Camera,
+    FileChooser,
     SplashScreen,
     StatusBar,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },

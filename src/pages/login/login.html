@@ -23,7 +23,18 @@
       <ion-col class="signup-col">
         <button ion-button class="login-btn" full type="submit" (click)="doLogin()" >Login</button>
         <button style="opacity:0.8; width:100%" ion-button color="danger" (click)="signup_page()">Not Yet a Member? Create Account Now</button>
-       
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col >
+        <button ion-button  round class="upload-btn" (click)="to_uploadPage()">
+            Click Here To Upload Files
+            <ion-icon class="upload-btn-icon" name="md-cloud-upload" ></ion-icon>
+             
+        </button>
+        
       </ion-col>
     </ion-row>
   </div>
